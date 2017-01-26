@@ -22,9 +22,8 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
 
   <link rel="shortcut icon" href="images/icons/favicon.ico">
-  <link rel="stylesheet" href="styles/header_footer_styles.css">
-  <link rel="stylesheet" href="styles/header_footer_styles_display.css">
   <link rel="stylesheet" href="styles/support.css">
+  <link rel="stylesheet" href="styles/support_display.css">
    
   <!--[if lt IE 9]>
   <script src="..."></script>
@@ -37,19 +36,100 @@
   <!-- Page header -->
   <header class="page-header">
     <div class="container">
-      <div class="page-header__column page-header__column--logo">
+      <div class="page-header__logo">
         <a href="https://pokupo.ru/" title="Pokupo.ru">Pokupo.ru</a>
       </div>
-      <div class="page-header__column page-header__column--search">
-        <button class="header-icon header-icon--search">Search</button>
+      <div class="page-header__title">
+        <h1>Служба поддержки Pokupo.ru</h1>
+      </div>
+    </div>
+    <div class="page-header__search">
+      <div class="container">
+      <form name="search-form" action="#" method="post">
+        <input type="search" name="search-field" placeholder="Поиск справки...">
+        <input type="submit" name="search-button" value="Искать">
+      </form>
+        
       </div>
     </div>
   </header>
 
   <!-- Page content -->
-  <section class="support">
+  <section class="page-content">
     <div class="container">
-      
+      <section class="page-content__breadcrumbs">
+        <a href="https://pokupo.ru/">Торговая платформа Pokupo.ru</a><span> / Служба поддержки Pokupo.ru</span>
+      </section>
+      <section class="page-content__applications">
+        <a href="#">Отправить заявку<span>Отправить новый вопрос в службу поддержки</span></a>
+        <a href="#">Существующие заявки<span>Просмотр ранее отправленных заявок</span></a>
+      </section>
+      <section class="page-content__articles">
+        <h2>Последние статьи Базы знаний:</h2>
+        <ul>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Для чего нужна аттестация и внесение персональных данных?</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Для чего нужна аттестация и внесение персональных данных?</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Очистка КЭШ браузера на мобильном устройстве</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Очистка КЭШ браузера на компьютере ПК</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Подключение домена первого уровня</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Настройка кода виджета оплаты</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Модерация магазина</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Добавление товара в общую торговую платформу</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Создание карточки товара в бесплатном магазине на платформе ПОКУПО</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Импорт товаров в магазин Pokupo с другого магазина через YML файл</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Как с pokupo открыть магазин легко. FAQ по платформе</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Видео-инструкция по регистрации и созданию интернет-магазина</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Инструкция для новичков pokupo. Открыть интернет-магазин бесплатно</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Протокол уведомления сайта продавца на платформе pokupo</a></span>
+          </li>
+          <li>
+            <span class="article-date">2016.10.17 в 12:37:30</span>
+            <span class="article-title"><a href="#">Приветствие от торговой платформы Pokupo</a></span>
+          </li>
+        </ul>
+        <a href="#">Просмотр всей базы знаний</a>
+      </section>
     </div>
   </section>
 
@@ -60,7 +140,7 @@
         <div class="page-footer__columns-left">
           <div class="page-footer__column page-footer__column--left">
             <ul>
-              <li class="contact-icon contact-icon--copyright">Pokupo.ru&nbsp;2014-2016</li>
+              <li class="contact-icon contact-icon--copyright">Pokupo.ru&nbsp;2014</li>
               <li class="contact-icon contact-icon--email"><a href="mailto:support@pokupo.ru" title="E-mail">support@pokupo.ru</a></li>
               <li class="contact-icon contact-icon--skype"><a href="skype:pokupo.ru?chat" onclick="return skypeCheck()" title="Skype">pokupo.ru</a></li>
             </ul>
@@ -94,6 +174,6 @@
       </div>
     </div>
   </footer>
-  
+
 </body>
 </html>

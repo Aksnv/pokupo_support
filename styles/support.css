@@ -1,3 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 975px;
+  margin: 0 auto;
+}
+
+/* ---------------  --------------- Header ---------------  --------------- */
+
+.page-header {
+  height: 180px;
+}
+
+.page-header__logo {
+  float: left;
+  margin-right: 25px;
+}
+
+.page-header__logo a {
+  display: block;
+  width: 150px;
+  height: 120px;
+  background-image: url(../images/logo/logo.png);
+  background-repeat: no-repeat;
+  background-position: 0 23px;
+  color: transparent;
+}
+
+.page-header__title {
+  float: left;
+}
+
+.page-header__search {
+  clear: both;
+  height: 60px;
+  background-color: #efece7;
+}
+
+
+/* ---------------  --------------- Main content ---------------  --------------- */
+
+.page-content {
+}
+
+/* ---------------  --------------- Footer ---------------  --------------- */
+
+.page-footer {
+  min-height: 140px;
+  background-color: #efece7;
+}
+
+.page-footer__columns {
+  overflow: hidden; 
+  font-size: 13px;
+  text-align: left;
+  line-height: 20px;
+  padding-bottom: 45px;
+  color: #605e5c;
+}
+
+.page-footer__columns a {
+  text-decoration: none;
+  color: #605e5c;
+}
+
+.page-footer__columns a:hover {
+  color: #177a93;
+}
+
+.page-footer__column {
+  float: left;
+  width: 25%;
+  margin-top: 41px;
+  padding-left: 2px;
+}
+
+.contact-icon::before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  margin-right: 5px;
+  background-image: url(../images/main_sprite.png);
+  background-repeat: no-repeat;
+}
+
+.contact-icon--copyright::before {
+  background-position: -858px -779px;
+}
+
+.contact-icon--email::before {
+  background-position: -858px -733px;
+}
+
+.contact-icon--skype::before {
+  background-position: -858px -756px;
+}
+
+.contact-icon--email a,
+.contact-icon--skype a {
+  color: #177a93;
+  border-bottom: 1px solid #177a93;
+}
+
+.contact-icon--email a:hover,
+.contact-icon--skype a:hover {
+  color: #ffa800;
+  border-bottom: 1px solid #ffa800;
+}
+
+.page-footer__column--sm {
+  float: right;
+  margin-top: 50px;
+  padding-left: 0;
+}
+
+.social-icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 35px;
+  height: 35px;
+  margin-right: 1px;
+  border-radius: 5px;
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+}
+
+.social-icon a {
+  display: block;
+  width: inherit;
+  height: inherit; 
+  color: transparent;
+}
+
+.social-icon a:hover {
+  color: transparent;
+}
+
+.social-icon--vk {
+  background-position: -680px -558px;
+}
+
+.social-icon--vk:hover {
+  background-position: -637px -558px;
+}
+
+.social-icon--fb {
+  background-position: -696px -782px;
+}
+
+.social-icon--fb:hover {
+  background-position: -782px -782px;
+}
+
+.social-icon--tw {
+  background-position: -729px -282px;
+}
+
+.social-icon--tw:hover {
+  background-position: -729px -509px;
+}
+
+.social-icon--blog {
+  background-position: -723px -558px;
+}
+
+.social-icon--blog:hover {
+  background-position: -729px -417px;
+}
+
+.social-icon--hh {
+  background-position: -729px -374px;
+}
+
+.social-icon--hh:hover {
+  background-position: -772px -648px;
+}
+
+.social-icon--gp {
+  background-position: -858px 0;
+}
+
+.social-icon--gp:hover {
+  background-position: -653px -782px;
+}
+
+.payment-system__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 44px;
+}
+
+.payment-system__item:nth-child(1) {
+  margin-left: 5px;
+}
+
+.payment-system__item:nth-child(2) {
+  margin-right: 49px;
+}
+
+.payment-system__item:nth-child(3) {
+  margin-right: 51px;
+}
+
+.payment-system__item:nth-child(4) {
+  margin-right: 53px;
+}
+
+.payment-system__item:nth-child(6) {
+  margin-right: 38px;
+}
+
+.payment-system__item:nth-child(7) {
+  margin-right: 42px;
+}
+
+.payment-system__item:nth-child(8) {
+  margin-right: 39px;
 }
