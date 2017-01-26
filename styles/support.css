@@ -154,14 +154,6 @@ body {
   background-position: -637px -558px;
 }
 
-.social-icon--fb {
-  background-position: -696px -782px;
-}
-
-.social-icon--fb:hover {
-  background-position: -782px -782px;
-}
-
 .social-icon--tw {
   background-position: -729px -282px;
 }
@@ -192,38 +184,4 @@ body {
 
 .social-icon--gp:hover {
   background-position: -653px -782px;
-}
-
-.payment-system__item {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 44px;
-}
-
-.payment-system__item:nth-child(1) {
-  margin-left: 5px;
-}
-
-.payment-system__item:nth-child(2) {
-  margin-right: 49px;
-}
-
-.payment-system__item:nth-child(3) {
-  margin-right: 51px;
-}
-
-.payment-system__item:nth-child(4) {
-  margin-right: 53px;
-}
-
-.payment-system__item:nth-child(6) {
-  margin-right: 38px;
-}
-
-.payment-system__item:nth-child(7) {
-  margin-right: 42px;
-}
-
-.payment-system__item:nth-child(8) {
-  margin-right: 39px;
 }
