@@ -58,78 +58,33 @@
   <section class="page-content">
     <div class="container">
       <section class="page-content__breadcrumbs">
-        <a href="https://pokupo.ru/">Торговая платформа Pokupo.ru</a><span> / Служба поддержки Pokupo.ru</span>
+        <a href="https://pokupo.ru/">Торговая платформа Pokupo.ru</a><span> / </span>
+        <a href="../index.html">Служба поддержки Pokupo.ru</a><span> / </span><span>Отправить заявку</span>
       </section>
-      <section class="page-content__applications">
-        <a href="#" class="application send-application">Отправить заявку<span>Отправить новый вопрос в службу поддержки</span></a>
-        <a href="#" class="application current-application">Существующие заявки<span>Просмотр ранее отправленных заявок</span></a>
-      </section>
-      <section class="page-content__articles">
-        <h2>Последние статьи Базы знаний:</h2>
-        <ul>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Для чего нужна аттестация и внесение персональных данных?</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Для чего нужна аттестация и внесение персональных данных?</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Очистка КЭШ браузера на мобильном устройстве</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Очистка КЭШ браузера на компьютере ПК</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Подключение домена первого уровня</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Настройка кода виджета оплаты</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Модерация магазина</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Добавление товара в общую торговую платформу</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Создание карточки товара в бесплатном магазине на платформе ПОКУПО</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Импорт товаров в магазин Pokupo с другого магазина через YML файл</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Как с pokupo открыть магазин легко. FAQ по платформе</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Видео-инструкция по регистрации и созданию интернет-магазина</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Инструкция для новичков pokupo. Открыть интернет-магазин бесплатно</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Протокол уведомления сайта продавца на платформе pokupo</a></span>
-          </li>
-          <li>
-            <span class="article-date">2016.10.17 в 12:37:30</span>
-            <span class="article-title"><a href="#">Приветствие от торговой платформы Pokupo</a></span>
-          </li>
-        </ul>
-        <a class="all-articles" href="#">Просмотр всей базы знаний</a>
-      </section>
+      <a href="../index.html" class="button-back">Назад к списку</a>
+      <article class="page-content__article">
+        <h1>Добавление нового вопроса</h1>
+        <section class="article-content">
+          <form name="application-form" method="POST" action="#">
+            <h2>Отправитель</h2>
+            <input type="text" name="application-form__name" placeholder="Имя">
+            <input type="email" name="application-form__email" placeholder="E-mail">
+            <h2>Категория</h2>
+            <input type="text" name="application-form__category" placeholder="Выберите категорию">
+            <input type="text" name="application-form__priority" placeholder="Выберите приоритет">
+            <h2>Сообщение</h2>
+            <input type="text" name="application-form__theme" placeholder="Тема сообщения">
+            <input type="textarea" name="application-form__message" placeholder="Текст сообщения">
+            <input type="file" name="application-form__files"><a href="#">Удалить</a>
+            <input type="file" name="application-form__files"><a href="#">Выбрать файл</a><span>(.gif, .jpg, .png, .zip, .rar, .csv, .doc, .docx, .xls, .xlsx, .txt, .pdf, не более 2 МБ)</span>
+            <h2>Отправка</h2>
+            <input type="text" name="application-form__login" placeholder="Ваш логин">
+            <input type="text" name="application-form__capcha" placeholder="Текст с картинки">
+            <img src="#" alt="Capcha"><a href="#">Обновить картинку</a>
+            <input type="submit" name="application-form__send-button" value="Отправить заявку">
+          </form>
+        </section>
+      </article>
     </div>
   </section>
 
