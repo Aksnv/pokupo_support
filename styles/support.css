@@ -521,8 +521,83 @@ ul {
   display: inline-block;
 }
 
+.article-rating ul {
+  margin-bottom: 0;
+  padding-top: 17px;
+}
+
 .article-rating .rating-icon:last-child::after {
   display: none;
+}
+
+.article-rating .rating-icon {
+  margin-right: 0;
+}
+
+.page-content__articles--base ul {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.page-content__articles--base ul:nth-of-type(2) {
+  margin-bottom: 81px;
+}
+
+.page-content__articles--base h2:nth-of-type(2) {
+  padding-bottom: 21px;
+}
+
+.article-content--base {
+  margin-bottom: 48px;
+  padding-top: 29px;
+  padding-bottom: 41px;
+}
+
+.article-content--base h2:nth-of-type(n) {
+  position: relative;
+  padding-left: 28px;
+  padding-bottom: 3px;
+}
+
+.article-content--base h2::before {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 16px;
+  background-image: url(../images/sprite-min.png);
+  background-position: -9px -928px;
+}
+
+.article-content--base ul,
+.article-content--base ul:nth-of-type(2) {
+  margin-bottom: 16px;
+}
+
+.article-content--base li {
+  padding-bottom: 8px;
+}
+
+.article-content--base h2>a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.article-content--base h2>a:hover {
+  color: #ed1c24;
+}
+
+.article-content--base a {
+  font-size: 13px;
+  font-weight: 400;
+  color: #177a93;
+}
+
+.article-content--base a:hover {
+  color: #ffa800;
 }
 
 
