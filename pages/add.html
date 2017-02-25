@@ -64,17 +64,38 @@
       <a href="../index.html" class="button-back">Назад к списку</a>
       <article class="page-content__article">
         <h1>Добавление нового вопроса</h1>
-        <section class="article-content">
-          <form name="application-form" method="POST" action="#">
+        <section class="article-content article-content--application">
+          <form name="application-form" method="POST" action="#" class="application-form">
             <h2>Отправитель</h2>
-            <input type="text" name="application-form__name" placeholder="Имя">
-            <input type="email" name="application-form__email" placeholder="E-mail">
+            <label for="application-form__name">
+              <input id="application-form__name" type="text" name="application-form__name" placeholder="Настоящее имя">
+            </label>
+            <label for="application-form__email">
+              <input id="application-form__email" type="email" name="application-form__email" placeholder="E-mail">
+            </label>
             <h2>Категория</h2>
-            <input type="text" name="application-form__category" placeholder="Выберите категорию">
-            <input type="text" name="application-form__priority" placeholder="Выберите приоритет">
+            <div class="application-form__category">
+              <p>Общие вопросы</p>
+              <ul class="application-form__category-list">
+                <li>Общие вопросы</li>
+                <li>Обращение к администрации</li>
+              </ul>
+            </div>
+            <div class="application-form__priority">
+              <p>Низкий</p>
+              <ul class="application-form__priority-list">
+                <li>Низкий</li>
+                <li>Средний</li>
+                <li>Высокий</li>
+              </ul>
+            </div>
             <h2>Сообщение</h2>
-            <input type="text" name="application-form__theme" placeholder="Тема сообщения">
-            <input type="textarea" name="application-form__message" placeholder="Текст сообщения">
+            <label for="application-form__theme">
+              <input id="application-form__theme" type="text" name="application-form__theme" placeholder="Тема">
+            </label>
+            <label for="application-form__message">
+              <textarea id="application-form__message" name="application-form__message" placeholder="Текст сообщения для отправки"></textarea>
+            </label>
             <input type="file" name="application-form__files"><a href="#">Удалить</a>
             <input type="file" name="application-form__files"><a href="#">Выбрать файл</a><span>(.gif, .jpg, .png, .zip, .rar, .csv, .doc, .docx, .xls, .xlsx, .txt, .pdf, не более 2 МБ)</span>
             <h2>Отправка</h2>

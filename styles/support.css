@@ -513,6 +513,189 @@ ul {
 
 /* ---------------  --------------- Add content ---------------  --------------- */
 
+.article-content--application {
+  padding-top: 43px;
+  padding-right: 0;
+  padding-bottom: 40px;
+}
+
+.application-form label {
+  position: relative;
+}
+
+.application-form input,
+.application-form textarea {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 43px;
+  padding-left: 15px;
+  background-color: #fff;
+  border: 3px solid #fff;
+  color: #000;
+}
+
+.application-form input {
+  width: 420px;
+  height: 60px;
+  margin-right: 34px;
+}
+
+.application-form input:focus,
+.application-form textarea:focus {
+  border: 3px solid #ff5a00;
+  outline: none;
+}
+
+.application-form input::-webkit-input-placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  color: #a1a1a1;
+}
+
+.application-form textarea::-webkit-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #a1a1a1;
+}
+
+.application-form input:-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  color: #a1a1a1;
+}
+
+.application-form input::-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  color: #a1a1a1;
+}
+
+.application-form h2:nth-of-type(n) {
+  padding-bottom: 37px;
+}
+
+.application-form textarea,
+input[name="application-form__theme"] {
+  width: 878px;
+  margin-bottom: 40px;
+}
+
+.application-form textarea {
+  min-height: 180px;
+  padding: 15px;
+  resize: vertical;
+}
+
+.application-form label::after {
+  position: absolute;
+  top: -1px;
+  content: "*";
+  font-size: 18px;
+  font-weight: 400;
+  color: #ed1c24;
+}
+
+label[for="application-form__name"]::after {
+  left: 159px;
+}
+
+label[for="application-form__email"]::after {
+  left: 75px;
+}
+
+label[for="application-form__theme"]::after {
+  left: 65px;
+}
+
+label[for="application-form__message"]::after {
+  top: -186px;
+  left: 296px;
+}
+
+.application-form__category,
+.application-form__priority {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 420px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 34px;
+  margin-bottom: 43px;
+  padding-top: 20px;
+  padding-left: 18px;
+  background-color: #fff;
+  color: #a1a1a1;
+  cursor: pointer;
+}
+
+.application-form__category::before,
+.application-form__priority::before {
+  position: absolute;
+  top: -25px;
+  left: 17px;
+  content: "Категория";
+  font-size: 13px;
+  font-weight: 400;
+  color: #a1a1a1;
+}
+
+.application-form__category::before {
+  content: "Категория";
+}
+
+.application-form__priority::before {
+  content: "Приоритет";
+}
+
+.application-form__category::after,
+.application-form__priority::after {
+    position: absolute;
+    top: 29px;
+    right: 16px;
+    content: "";
+    display: block;
+    border: 6px solid transparent;
+    border-top: 6px solid #999;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.application-form__category--open::after,
+.application-form__priority--open::after {
+  top: 23px;
+  transform: rotate(180deg);
+}
+
+.application-form__category-list,
+.application-form__priority-list {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  line-height: 60px;
+  padding-top: 60px;
+  padding-left: 15px;
+  background-color: #fff;
+  color: #000;
+  border-bottom: 3px solid #e2e2e2;
+  box-shadow: 0 5px 10px #666;
+  z-index: 1;
+}
+
+.application-form__category-list li:hover,
+.application-form__priority-list li:hover {
+  color: #ffa800;
+}
+
+.application-form__category p,
+.application-form__priority p {
+  position: relative;
+  z-index: 2;
+}
 
 /* ---------------  --------------- Base content ---------------  --------------- */
 
@@ -599,7 +782,6 @@ ul {
 .article-content--base a:hover {
   color: #ffa800;
 }
-
 
 /* ---------------  --------------- Footer ---------------  --------------- */
 
