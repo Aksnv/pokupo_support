@@ -96,12 +96,26 @@
             <label for="application-form__message">
               <textarea id="application-form__message" name="application-form__message" placeholder="Текст сообщения для отправки"></textarea>
             </label>
-            <input type="file" name="application-form__files"><a href="#">Удалить</a>
-            <input type="file" name="application-form__files"><a href="#">Выбрать файл</a><span>(.gif, .jpg, .png, .zip, .rar, .csv, .doc, .docx, .xls, .xlsx, .txt, .pdf, не более 2 МБ)</span>
+            <div class="application-form__files application-form__files--view">
+              <span class="application-form__file-name">sckan_pasporta.png</span>
+              <span class="application-form__file-diskspace">1,5 МБ</span>
+              <a href="#">Удалить</a>
+            </div>
+            <div class="application-form__files application-form__files--choose">
+              <label for="application-form__file-choose"><span class="application-form__file-choose">Выбрать файл</span></label>
+              <input type="file" id="application-form__file-choose" name="application-form__file-choose">
+              <span class="application-form__file-extension">(.gif, .jpg, .png, .zip, .rar, .csv, .doc, .docx, .xls, .xlsx, .txt, .pdf, не более 2 МБ)</span>
+            </div>        
             <h2>Отправка</h2>
-            <input type="text" name="application-form__login" placeholder="Ваш логин">
-            <input type="text" name="application-form__capcha" placeholder="Текст с картинки">
-            <img src="#" alt="Capcha"><a href="#">Обновить картинку</a>
+            <label for="application-form__login">
+              <input type="text" name="application-form__login" placeholder="Ваш логин">
+            </label>
+            <label for="application-form__capcha">
+              <input type="text" name="application-form__capcha" placeholder="Текст с картинки">
+            </label>
+            <div class="application-form__capcha-image">
+              <img src="../images/pages/capcha.png" alt="Capcha"><a href="#">Обновить картинку</a>
+            </div>
             <input type="submit" name="application-form__send-button" value="Отправить заявку">
           </form>
         </section>

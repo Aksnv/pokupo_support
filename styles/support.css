@@ -514,9 +514,10 @@ ul {
 /* ---------------  --------------- Add content ---------------  --------------- */
 
 .article-content--application {
+  margin-bottom: 140px;
   padding-top: 43px;
   padding-right: 0;
-  padding-bottom: 40px;
+  padding-bottom: 17px;
 }
 
 .application-form label {
@@ -583,6 +584,7 @@ input[name="application-form__theme"] {
 
 .application-form textarea {
   min-height: 180px;
+  margin-bottom: 35px;
   padding: 15px;
   resize: vertical;
 }
@@ -597,7 +599,7 @@ input[name="application-form__theme"] {
 }
 
 label[for="application-form__name"]::after {
-  left: 159px;
+  left: 155px;
 }
 
 label[for="application-form__email"]::after {
@@ -611,6 +613,14 @@ label[for="application-form__theme"]::after {
 label[for="application-form__message"]::after {
   top: -186px;
   left: 296px;
+}
+
+label[for="application-form__login"]::after {
+  left: 116px;
+}
+
+label[for="application-form__capcha"]::after {
+  left: 169px;
 }
 
 .application-form__category,
@@ -636,7 +646,6 @@ label[for="application-form__message"]::after {
   position: absolute;
   top: -25px;
   left: 17px;
-  content: "Категория";
   font-size: 13px;
   font-weight: 400;
   color: #a1a1a1;
@@ -695,6 +704,130 @@ label[for="application-form__message"]::after {
 .application-form__priority p {
   position: relative;
   z-index: 2;
+}
+
+.application-form__files {
+  position: relative;
+  width: 878px;
+  min-height: 60px;
+  margin-bottom: 9px;
+  border: 1px dashed black;
+}
+
+.application-form__files::after {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url("../images/sprite.png");
+  background-position: -102px -866px;
+}
+
+.application-form__files--view::before {
+  position: absolute;
+  top: -25px;
+  left: 17px;
+  content: "Прикрепить файлы (не более 2-х)";
+  font-size: 13px;
+  font-weight: 400;
+  color: #a1a1a1;
+}
+
+.application-form__file-name {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 18px;
+  padding-left: 65px;
+  padding-right: 6px;
+  color: #000;
+}
+
+.application-form__file-diskspace {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  padding-right: 6px;
+  color: #666;
+}
+
+.application-form__files--choose {
+  margin-bottom: 43px;
+}
+
+.application-form__files--choose label::after {
+  display: none;
+}
+
+input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin-right: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+.application-form__file-choose {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: underline;
+  padding-top: 19px;
+  padding-left: 64px;
+  padding-right: 2px;
+  color: #177a93;
+  cursor: pointer;
+}
+
+.application-form__file-choose:hover {
+  color: #ffa800;
+}
+
+.application-form__file-extension {
+  font-size: 13px;
+  text-decoration: none;
+  color: #000;
+}
+
+.application-form input[name="application-form__capcha"] {
+  width: 258px;
+  margin-right: 0;
+}
+
+.application-form__capcha-image {
+  float: right;
+  width: 152px;
+  line-height: 18px;
+  margin-right: 50px;
+}
+
+.application-form__capcha-image a {
+  display: inline-block;
+}
+
+.application-form input[name="application-form__send-button"] {
+  position: absolute;
+  left: calc(50% - 177px);
+  bottom: -100px;
+  width: 354px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  border: 2px solid #ffa800;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.application-form input[name="application-form__send-button"]:hover {
+  background-color: #ffa800;
 }
 
 /* ---------------  --------------- Base content ---------------  --------------- */
