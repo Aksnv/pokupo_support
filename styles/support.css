@@ -586,7 +586,8 @@ input[name="application-form__theme"] {
   min-height: 180px;
   margin-bottom: 35px;
   padding: 15px;
-  resize: vertical;
+  /* resize: vertical; */
+  resize: none;
 }
 
 .application-form label::after {
@@ -621,6 +622,30 @@ label[for="application-form__login"]::after {
 
 label[for="application-form__capcha"]::after {
   left: 169px;
+}
+
+.application-form__label--focus::after {
+  display: none;
+}
+
+.application-form__prompt {
+  position: absolute;
+  top: -47px;
+  left: 17px;
+  display: none;
+  font-size: 13px;
+  font-weight: 400;
+  color: #a1a1a1;
+}
+
+.application-form__prompt--textarea {
+  width: 200px;
+  top: 51px;
+  left: -899px;
+}
+
+.application-form__prompt--open {
+  display: block;
 }
 
 .application-form__category,
@@ -693,6 +718,11 @@ label[for="application-form__capcha"]::after {
   border-bottom: 3px solid #e2e2e2;
   box-shadow: 0 5px 10px #666;
   z-index: 1;
+}
+
+.application-form__category-list--open,
+.application-form__priority-list--open {
+  display: block;
 }
 
 .application-form__category-list li:hover,

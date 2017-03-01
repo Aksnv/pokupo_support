@@ -68,9 +68,11 @@
           <form name="application-form" method="POST" action="#" class="application-form">
             <h2>Отправитель</h2>
             <label for="application-form__name">
+              <span class="application-form__prompt">Настоящее имя</span>
               <input id="application-form__name" type="text" name="application-form__name" placeholder="Настоящее имя">
             </label>
             <label for="application-form__email">
+              <span class="application-form__prompt">E-mail</span>
               <input id="application-form__email" type="email" name="application-form__email" placeholder="E-mail">
             </label>
             <h2>Категория</h2>
@@ -91,9 +93,11 @@
             </div>
             <h2>Сообщение</h2>
             <label for="application-form__theme">
+              <span class="application-form__prompt">Тема</span>
               <input id="application-form__theme" type="text" name="application-form__theme" placeholder="Тема">
             </label>
             <label for="application-form__message">
+              <span class="application-form__prompt application-form__prompt--textarea">Текст сообщения для отправки</span>
               <textarea id="application-form__message" name="application-form__message" placeholder="Текст сообщения для отправки"></textarea>
             </label>
             <div class="application-form__files application-form__files--view">
@@ -108,9 +112,11 @@
             </div>        
             <h2>Отправка</h2>
             <label for="application-form__login">
+              <span class="application-form__prompt">Ваш логин</span>
               <input type="text" name="application-form__login" placeholder="Ваш логин">
             </label>
             <label for="application-form__capcha">
+              <span class="application-form__prompt">Текст с картинки</span>
               <input type="text" name="application-form__capcha" placeholder="Текст с картинки">
             </label>
             <div class="application-form__capcha-image">
@@ -164,6 +170,8 @@
       </div>
     </div>
   </footer>
-
+  
+  <script src="../scripts/jquery-3.1.1.min.js"></script>
+  <script src="../scripts/main.js"></script>
 </body>
 </html>
