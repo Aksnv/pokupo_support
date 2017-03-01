@@ -193,7 +193,7 @@
     padding-top: 0;
   }
 
-  .page-content__articles ul {
+  .page-content__articles--base ul {
     margin-bottom: 20px;
   }
 
@@ -240,17 +240,131 @@
 
 @media screen and (max-width: 749px) {
 
+  .container {
+    width: 300px;
+  }
+
   /* ---------------  --------------- Header ---------------  --------------- */
 
-  .page-header__logo {
-    margin-right: 28px;
-    margin-left: 50px;
+  .page-header__logo a {
+    width: 100px;
+    background-position: 0 35px;
   }
 
-  .page-header__logo a {
-    width: 107px;
-    background-position: 7px 35px;
+  .page-header__title h1 {
+    width: 172px;
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 29px;
   }
+
+  .page-header__search input[type="search"] {
+    width: 248px;
+    margin-right: 0;
+  }
+
+  .page-header__search input[type="submit"] {
+    width: 52px;
+    font-size: 0;
+  }
+
+  .search-button::after {
+    left: -40px;
+  }
+
+  /* ---------------  --------------- Main content ---------------  --------------- */
+
+  .page-content__breadcrumbs a {
+    display: inline-block;
+    vertical-align: top;
+    width: 72px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .page-content__breadcrumbs a:nth-of-type(1) {
+    width: 89px;
+  }
+
+  .page-content__article h1 {
+    width: 280px;
+    line-height: 34px;
+    padding-bottom: 26px;
+  }
+
+  .button-back {
+    margin-bottom: 33px;
+  }
+
+  /* ---------------  --------------- Add content ---------------  --------------- */
+
+  .application-form input,
+  .application-form textarea,
+  .application-form__category, 
+  .application-form__priority,
+  .application-form__files,
+  .application-form input[name="application-form__theme"],
+  .application-form input[name="application-form__login"],
+  .application-form input[name="application-form__capcha"] {
+    width: 300px;
+  }
+
+  .application-form input,
+  .application-form__category {
+    margin-bottom: 40px;
+  }
+
+  .application-form input[name="application-form__email"],
+  .application-form__priority {
+    margin-bottom: 23px;
+  }
+
+  .application-form textarea {
+    margin-bottom: 81px;
+  }
+
+  .application-form__files--view::before {
+    top: -72px;
+  }
+
+  .application-form__file-name {
+    width: 153px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .application-form__file-diskspace {
+    vertical-align: top;
+    padding-top: 21px;
+    padding-left: 3px;
+    padding-right: 24px;
+
+  }
+
+  .application-form__file-extension {
+    position: absolute;
+    top: -120px;
+    left: 17px;
+    color: #a1a1a1;
+  }
+
+  .application-form__capcha-image {
+    float: none;
+    width: 300px;
+  }
+
+  .application-form__capcha-image a {
+    display: inline;
+  }
+
+  .application-form input[name="application-form__send-button"] {
+    width: 300px;
+    left: calc(50% - 150px);
+  }
+
+
+
 
   /* ---------------  --------------- Footer ---------------  --------------- */
 

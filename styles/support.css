@@ -611,7 +611,7 @@ label[for="application-form__theme"]::after {
 
 label[for="application-form__message"]::after {
   top: -186px;
-  left: 296px;
+  left: 174px;
 }
 
 label[for="application-form__login"]::after {
@@ -695,6 +695,10 @@ label[for="application-form__capcha"]::after {
     z-index: 2;
 }
 
+.application-form__category::after {
+  z-index: 4;
+}
+
 .application-form__category--open::after,
 .application-form__priority--open::after {
   top: 23px;
@@ -718,6 +722,10 @@ label[for="application-form__capcha"]::after {
   z-index: 1;
 }
 
+.application-form__category-list {
+  z-index: 3;
+}
+
 .application-form__category-list--open,
 .application-form__priority-list--open {
   display: block;
@@ -732,6 +740,10 @@ label[for="application-form__capcha"]::after {
 .application-form__priority p {
   position: relative;
   z-index: 2;
+}
+
+.application-form__category p {
+  z-index: 4;
 }
 
 .application-form__files {
@@ -844,11 +856,11 @@ input[type="file"] {
   width: 354px;
   height: 60px;
   font-size: 20px;
-  font-weight: 600;
   text-transform: uppercase;
   margin-right: 0;
   margin-bottom: 0;
   padding-left: 0;
+  padding-right: 0;
   border: 2px solid #ffa800;
   border-radius: 30px;
   cursor: pointer;
