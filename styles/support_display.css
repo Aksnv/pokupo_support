@@ -61,7 +61,8 @@
     line-height: 22px;
   }
 
-  .article-date {
+  .article-date, 
+  .article-reviews {
     float: none;
     line-height: 11px;
   }
@@ -134,6 +135,70 @@
 
   .button-back:last-child {
     margin-bottom: 40px;
+  }
+
+  /* ---------------  --------------- Add content ---------------  --------------- */
+
+  .application-form input,
+  .application-form__category, 
+  .application-form__priority {
+    width: 307px;
+  }
+
+  .application-form input[name="application-form__email"] {
+    margin-right: 0;
+  }
+
+  .application-form__priority {
+    margin-right: 0;
+  }
+
+  .application-form__category-list, 
+  .application-form__priority-list {
+    width: 307px;
+  }
+
+  .application-form input[name="application-form__theme"] {
+    width: 100%;
+  }
+
+  .application-form textarea {
+    width: 655px;
+  }
+
+  .application-form__prompt--textarea {
+    top: -229px;
+    left: 17px;
+  }
+
+  .application-form__files {
+    width: 655px;
+  }
+
+  .application-form input[name="application-form__login"] {
+    width: 230px;
+  }
+
+  .application-form input[name="application-form__capcha"] {
+    width: 225px;
+  }
+
+  .application-form__capcha-image {
+    margin-right: 0;
+  }
+
+  /* ---------------  --------------- Base content ---------------  --------------- */
+
+  .article-rating ul {
+    padding-top: 0;
+  }
+
+  .page-content__articles ul {
+    margin-bottom: 20px;
+  }
+
+  .page-content__articles--base ul:nth-of-type(2) {
+    margin-bottom: 44px;
   }
 
   /* ---------------  --------------- Footer ---------------  --------------- */
