@@ -838,6 +838,10 @@ input[type="file"] {
   margin-right: 0;
 }
 
+.application-form input[name="application-form__capcha"] {
+  margin-bottom: 20px;
+}
+
 .application-form__capcha-image {
   float: right;
   width: 152px;

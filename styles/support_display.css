@@ -299,6 +299,11 @@
 
   /* ---------------  --------------- Add content ---------------  --------------- */
 
+  .article-content--application {
+    margin-bottom: 120px;
+    padding-bottom: 26px;
+  }
+
   .application-form input,
   .application-form textarea,
   .application-form__category, 
@@ -324,6 +329,14 @@
     margin-bottom: 81px;
   }
 
+  label[for="application-form__message"]::after {
+    top: -227px;
+  }
+
+  .application-form__file-extension {
+    line-height: 15px;
+  }
+
   .application-form__files--view::before {
     top: -72px;
   }
@@ -339,14 +352,28 @@
     padding-top: 21px;
     padding-left: 3px;
     padding-right: 24px;
+  }
 
+  .application-form__files--view::before {
+    left: 13px;
+    content: "Прикрепить файлы";
+  }
+
+  .application-form__files--view a {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 20px;
   }
 
   .application-form__file-extension {
     position: absolute;
-    top: -120px;
-    left: 17px;
+    top: -122px;
+    left: 13px;
     color: #a1a1a1;
+  }
+
+  .application-form__files--choose {
+    margin-bottom: 24px;
   }
 
   .application-form__capcha-image {
@@ -355,16 +382,17 @@
   }
 
   .application-form__capcha-image a {
-    display: inline;
+    font-size: 12px;
+    vertical-align: top;
+    padding-left: 17px;
+    padding-top: 12px;
   }
 
   .application-form input[name="application-form__send-button"] {
-    width: 300px;
     left: calc(50% - 150px);
+    bottom: -90px;
+    width: 300px;
   }
-
-
-
 
   /* ---------------  --------------- Footer ---------------  --------------- */
 
