@@ -331,6 +331,10 @@
     margin-bottom: 33px;
   }
 
+  .all-articles {
+    margin-bottom: 60px;
+  }
+
   /* ---------------  --------------- Add content ---------------  --------------- */
 
   .article-content--application {
@@ -433,12 +437,26 @@
   .page-content__articles--base ul {
     position: relative;
     overflow: visible;
+    margin-bottom: 30px;
     padding-right: 25px;
   }
 
-  .article-title a {
+  .article-title {
+    width: 300px;
+    margin-bottom: 34px;
+  }
+
+  .article-title--top {
+    margin-bottom: 26px;
+  }
+
+  .article-title--top a {
     font-size: 18px;
     line-height: 20px;
+  }
+
+  .article-title a {
+    font-size: 16px;
   }
 
   .article-rating {
@@ -448,13 +466,15 @@
   }
 
   .page-content__articles--base h2:nth-of-type(2) {
-    padding-top: 50px;
+    padding-top: 46px;
     padding-bottom: 24px;
   }
 
   .article-content--base {
+    margin-bottom: 42px;
     padding-top: 42px;
     padding-right: 0;
+    padding-bottom: 21px;
   }
 
   .article-content--base h2::before {
@@ -485,10 +505,12 @@
   }
 
   .article-content--base ul:nth-of-type(2) {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
   }
 
-
+  .page-content__articles--base ul:nth-of-type(2) {
+    margin-bottom: 63px;
+  }
 
   /* ---------------  --------------- Footer ---------------  --------------- */
 
