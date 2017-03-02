@@ -335,6 +335,20 @@
     margin-bottom: 60px;
   }
 
+  /* ---------------  --------------- Page content ---------------  --------------- */
+
+  .article-content__ol-list img {
+    width: 300px;
+  }
+
+  .article-details__block p {
+    font-size: 14px;
+  }
+
+  .article-links {
+    margin-bottom: 0;
+  }
+
   /* ---------------  --------------- Add content ---------------  --------------- */
 
   .article-content--application {
