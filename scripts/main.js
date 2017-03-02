@@ -38,8 +38,13 @@ $(".application-form__priority").click(function() {
 
 /* Адаптивный контент для мобильных устройств */
 
-if ($(".container").css("width") == "300px") {
-  $(".application-form__file-extension").html("(не более 2-х файлов, формата: .gif, .jpg, .png, .zip, .rar, .csv, .doc, .docx, .xls, .xlsx, .txt, .pdf, не более 2 МБ)");
-}
+$(window).resize(function() {
+  if ($(".container").css("width") == "300px") {
+    $(".application-form__file-extension").html("(не более 2-х файлов, формата: .gif, .jpg, .png, .zip, .rar, .csv, .doc, .docx, .xls, .xlsx, .txt, .pdf, не более 2 МБ)");
+  } else {
+    $(".application-form__file-extension").html("(.gif, .jpg, .png, .zip, .rar, .csv, .doc, .docx, .xls, .xlsx, .txt, .pdf, не более 2 МБ)");
+  }
+});
+
 
 
