@@ -145,12 +145,21 @@
     width: 307px;
   }
 
+  .application-form__category {
+    margin-right: 34px;
+  }
+
   .application-form input[name="application-form__email"] {
     margin-right: 0;
   }
 
   .application-form__priority {
     margin-right: 0;
+  }
+
+  .application-form__category::after, 
+  .application-form__priority::after {
+    right: 14px;
   }
 
   .application-form__category-list, 
@@ -269,7 +278,7 @@
   }
 
   .search-button::after {
-    left: -40px;
+    left: 12px;
   }
 
   /* ---------------  --------------- Main content ---------------  --------------- */
@@ -367,9 +376,13 @@
     width: 300px;
   }
 
-  .application-form input,
-  .application-form__category {
+  .application-form input {
     margin-bottom: 40px;
+  }
+
+  .application-form__category,
+  .application-form__priority input {
+    margin-bottom: 0;
   }
 
   .application-form input[name="application-form__email"],

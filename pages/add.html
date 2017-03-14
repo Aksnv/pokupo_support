@@ -77,6 +77,28 @@
             </label>
             <h2>Категория</h2>
             <div class="application-form__category">
+              <label for="application-form__category">
+                <span class="application-form__prompt application-form__prompt--visible">Категория</span>
+                <input id="application-form__category" type="text" name="application-form__category" placeholder="Общие вопросы">
+              </label>
+              <ul class="application-form__category-list">
+                <li>Общие вопросы</li>
+                <li>Обращение к администрации</li>
+              </ul>
+            </div>
+            <div class="application-form__priority">
+              <label for="application-form__priority">
+                <span class="application-form__prompt application-form__prompt--visible">Приоритет</span>
+                <input id="application-form__priority" type="text" name="application-form__priority" placeholder="Низкий">
+              </label>
+              <ul class="application-form__priority-list">
+                <li>Низкий</li>
+                <li>Средний</li>
+                <li>Высокий</li>
+              </ul>
+            </div>
+            
+            <!-- <div class="application-form__category">
               <p>Общие вопросы</p>
               <ul class="application-form__category-list">
                 <li>Общие вопросы</li>
@@ -90,7 +112,7 @@
                 <li>Средний</li>
                 <li>Высокий</li>
               </ul>
-            </div>
+            </div> -->
             <h2>Сообщение</h2>
             <label for="application-form__theme">
               <span class="application-form__prompt">Тема</span>
@@ -113,11 +135,11 @@
             <h2>Отправка</h2>
             <label for="application-form__login">
               <span class="application-form__prompt">Ваш логин</span>
-              <input type="text" name="application-form__login" placeholder="Ваш логин">
+              <input type="text" name="application-form__login" id="application-form__login" placeholder="Ваш логин">
             </label>
             <label for="application-form__capcha">
               <span class="application-form__prompt">Текст с картинки</span>
-              <input type="text" name="application-form__capcha" placeholder="Текст с картинки">
+              <input type="text" name="application-form__capcha" id="application-form__capcha" placeholder="Текст с картинки">
             </label>
             <div class="application-form__capcha-image">
               <img src="../images/pages/capcha.png" alt="Capcha"><a href="#">Обновить картинку</a>

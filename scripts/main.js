@@ -36,6 +36,16 @@ $(".application-form__priority").click(function() {
   $(this).toggleClass("application-form__priority--open");
 });
 
+/* Подстановка значений из выпадающего меню в поле формы */
+
+$(".application-form__category-list li").click(function() {
+  $("#application-form__category").val($(this).text());
+});
+
+$(".application-form__priority-list li").click(function() {
+  $("#application-form__priority").val($(this).text());
+});
+
 /* Адаптивный контент для мобильных устройств */
 
 $(window).resize(function() {

@@ -17,6 +17,20 @@ ul {
   margin: 0 auto;
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+    padding-right: 9px
+}
+
+::-webkit-scrollbar-track {
+    background: #fff
+}
+
+::-webkit-scrollbar-thumb {
+    color: #ffa800;
+    background: #ffa800
+}
+
 /* ---------------  --------------- Header ---------------  --------------- */
 
 .page-header {
@@ -87,6 +101,7 @@ ul {
 .page-header__search input[type="submit"] {
   width: 171px;
   height: 52px;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -547,6 +562,12 @@ ul {
   outline: none;
 }
 
+.application-form input[name="application-form__category"]:focus,
+.application-form input[name="application-form__priority"]:focus {
+  border: 3px solid #fff;
+  outline: none;
+}
+
 .application-form input::-webkit-input-placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -602,6 +623,11 @@ input[name="application-form__theme"] {
   color: #ed1c24;
 }
 
+.application-form label[for="application-form__category"]::after,
+.application-form label[for="application-form__priority"]::after {
+  display: none;
+}
+
 label[for="application-form__name"]::after {
   left: 159px;
 }
@@ -631,7 +657,8 @@ label[for="application-form__capcha"]::after {
   display: none;
 }
 
-.application-form__prompt {
+.application-form__prompt,
+.application-form__prompt--visible {
   position: absolute;
   top: -47px;
   left: 17px;
@@ -639,6 +666,10 @@ label[for="application-form__capcha"]::after {
   font-size: 13px;
   font-weight: 400;
   color: #a1a1a1;
+}
+
+.application-form__prompt--visible {
+  display: block;
 }
 
 .application-form__prompt--textarea {
@@ -656,7 +687,7 @@ label[for="application-form__capcha"]::after {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 420px;
+  /* width: 420px;
   height: 60px;
   font-size: 18px;
   font-weight: 400;
@@ -666,10 +697,15 @@ label[for="application-form__capcha"]::after {
   padding-left: 18px;
   background-color: #fff;
   color: #a1a1a1;
+  cursor: pointer; */
+}
+
+#application-form__category,
+#application-form__priority {
   cursor: pointer;
 }
 
-.application-form__category::before,
+/* .application-form__category::before,
 .application-form__priority::before {
   position: absolute;
   top: -25px;
@@ -685,13 +721,13 @@ label[for="application-form__capcha"]::after {
 
 .application-form__priority::before {
   content: "Приоритет";
-}
+} */
 
 .application-form__category::after,
 .application-form__priority::after {
     position: absolute;
     top: 29px;
-    right: 16px;
+    right: 49px;
     content: "";
     display: block;
     border: 6px solid transparent;
@@ -717,14 +753,16 @@ label[for="application-form__capcha"]::after {
   top: 0;
   left: 0;
   width: 420px;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 60px;
   padding-top: 60px;
-  padding-left: 15px;
   background-color: #fff;
   color: #000;
   border-bottom: 3px solid #e2e2e2;
   box-shadow: 0 5px 10px #666;
   z-index: 1;
+  cursor: pointer;
 }
 
 .application-form__category-list {
@@ -736,8 +774,14 @@ label[for="application-form__capcha"]::after {
   display: block;
 }
 
+.application-form__category-list li, 
+.application-form__priority-list li {
+  padding-left: 15px;
+}
+
 .application-form__category-list li:hover,
 .application-form__priority-list li:hover {
+  background-color: #efece7;
   color: #ffa800;
 }
 
