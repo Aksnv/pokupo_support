@@ -176,7 +176,7 @@
   }
 
   .application-form__prompt--textarea {
-    top: -229px;
+    top: -25px;
     left: 17px;
   }
 
@@ -395,7 +395,7 @@
   }
 
   label[for="application-form__message"]::after {
-    top: -227px;
+    top: 22px;
   }
 
   .application-form__file-extension {

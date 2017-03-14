@@ -1,5 +1,37 @@
 /* Добавление/удаление звездочек у полей ввода + подсказки над полями ввода */
 
+$(document).ready(function() {
+  if ($("#application-form__name").val() != "") {
+    $("#application-form__name").parent().addClass("application-form__label--cleared");
+    $("#application-form__name").prev().addClass("application-form__prompt--open");
+  }
+
+  if ($("#application-form__email").val() != "") {
+    $("#application-form__email").parent().addClass("application-form__label--cleared");
+    $("#application-form__email").prev().addClass("application-form__prompt--open");
+  }
+
+  if ($("#application-form__theme").val() != "") {
+    $("#application-form__theme").parent().addClass("application-form__label--cleared");
+    $("#application-form__theme").prev().addClass("application-form__prompt--open");
+  }
+
+  if ($("#application-form__message").val() != "") {
+    $("#application-form__message").parent().addClass("application-form__label--cleared");
+    $("#application-form__message").prev().addClass("application-form__prompt--open");
+  }
+
+  if ($("#application-form__login").val() != "") {
+    $("#application-form__login").parent().addClass("application-form__label--cleared");
+    $("#application-form__login").prev().addClass("application-form__prompt--open");
+  }
+
+  if ($("#application-form__capcha").val() != "") {
+    $("#application-form__capcha").parent().addClass("application-form__label--cleared");
+    $("#application-form__capcha").prev().addClass("application-form__prompt--open");
+  }
+});
+
 $(".application-form input").keydown(function() {
   $(this).parent().addClass("application-form__label--focus");
   $(this).siblings(".application-form__prompt").addClass("application-form__prompt--open");
@@ -8,6 +40,7 @@ $(".application-form input").keydown(function() {
 $(".application-form input").blur(function() {
   if ($(this).val() == "") {
     $(this).parent().removeClass("application-form__label--focus");
+    $(this).parent().removeClass("application-form__label--cleared");
     $(this).siblings(".application-form__prompt").removeClass("application-form__prompt--open");
   }
 });
@@ -20,6 +53,7 @@ $(".application-form textarea").keydown(function() {
 $(".application-form textarea").blur(function() {
   if ($(this).val() == "") {
     $(this).parent().removeClass("application-form__label--focus");
+    $(this).parent().removeClass("application-form__label--cleared");
     $(this).siblings(".application-form__prompt").removeClass("application-form__prompt--open");
   }
 });

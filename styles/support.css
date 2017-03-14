@@ -537,6 +537,10 @@ ul {
   position: relative;
 }
 
+.application-form label[for="application-form__message"] {
+  display: inline-block;
+}
+
 .application-form input,
 .application-form textarea {
   font-family: "Open Sans", sans-serif;
@@ -589,7 +593,21 @@ ul {
   color: #a1a1a1;
 }
 
+.application-form textarea:-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #a1a1a1;
+}
+
 .application-form input::-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #a1a1a1;
+}
+
+.application-form textarea::-ms-input-placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -641,7 +659,7 @@ label[for="application-form__theme"]::after {
 }
 
 label[for="application-form__message"]::after {
-  top: -180px;
+  top: 22px;
   left: 174px;
 }
 
@@ -653,7 +671,8 @@ label[for="application-form__capcha"]::after {
   left: 169px;
 }
 
-.application-form__label--focus::after {
+.application-form__label--focus::after,
+.application-form__label--cleared::after {
   display: none;
 }
 
@@ -674,8 +693,8 @@ label[for="application-form__capcha"]::after {
 
 .application-form__prompt--textarea {
   width: 200px;
-  top: 51px;
-  left: -899px;
+  top: -25px;
+  left: 17px;
 }
 
 .application-form__prompt--open {
