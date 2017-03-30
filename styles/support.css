@@ -1028,6 +1028,16 @@ input[type="file"] {
   color: #ffa800;
 }
 
+/* ---------------  --------------- Search content ---------------  --------------- */
+
+label[for="application-form__id"]::after {
+  left: 226px;
+}
+
+.forget-id {
+  background-color: #ffe9bf;
+}
+
 /* ---------------  --------------- Footer ---------------  --------------- */
 
 .page-footer {

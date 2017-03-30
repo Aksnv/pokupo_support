@@ -63,74 +63,38 @@
       </section>
       <a href="../index.html" class="button-back">Назад к списку</a>
       <article class="page-content__article">
-        <h1>Добавление нового вопроса</h1>
+        <h1>Просмотр существующих заявок</h1>
         <section class="article-content article-content--application">
           <form name="application-form" method="POST" action="#" class="application-form">
-            <h2>Отправитель</h2>
-            <label for="application-form__name">
-              <span class="application-form__prompt">Настоящее имя</span>
-              <input id="application-form__name" type="text" name="application-form__name" placeholder="Настоящее имя">
+            <h2>Поиск заявки</h2>
+            <label for="application-form__id">
+              <span class="application-form__prompt">Идентификатор заявки</span>
+              <input id="application-form__id" type="text" name="application-form__id" placeholder="Идентификатор заявки">
             </label>
             <label for="application-form__email">
               <span class="application-form__prompt">E-mail</span>
               <input id="application-form__email" type="email" name="application-form__email" placeholder="E-mail">
             </label>
-            <h2>Категория</h2>
-            <div class="application-form__category">
-              <label for="application-form__category">
-                <span class="application-form__prompt application-form__prompt--visible">Категория</span>
-                <input id="application-form__category" type="text" name="application-form__category" placeholder="Общие вопросы">
+            <button class="forget-id__button">Забыли идентификатор</button>
+            
+            <section class="forget-id">
+              <h2>Забыли идентификатор?</h2>
+              <p>Не переживайте! Введите свой E-mail адрес и мы отправим Вам идентификатор заявки в ближайшее время:</p>
+              <label for="application-form__email">
+                <span class="application-form__prompt">E-mail</span>
+                <input id="application-form__email" type="email" name="application-form__email" placeholder="E-mail">
               </label>
-              <ul class="application-form__category-list">
-                <li>Общие вопросы</li>
-                <li>Обращение к администрации</li>
-              </ul>
-            </div>
-            <div class="application-form__priority">
-              <label for="application-form__priority">
-                <span class="application-form__prompt application-form__prompt--visible">Приоритет</span>
-                <input id="application-form__priority" type="text" name="application-form__priority" placeholder="Низкий">
-              </label>
-              <ul class="application-form__priority-list">
-                <li>Низкий</li>
-                <li>Средний</li>
-                <li>Высокий</li>
-              </ul>
-            </div>
-            <h2>Сообщение</h2>
-            <label for="application-form__theme">
-              <span class="application-form__prompt">Тема</span>
-              <input id="application-form__theme" type="text" name="application-form__theme" placeholder="Тема">
-            </label>
-            <label for="application-form__message">
-              <span class="application-form__prompt application-form__prompt--textarea">Текст сообщения для отправки</span>
-              <textarea id="application-form__message" name="application-form__message" placeholder="Текст сообщения"></textarea>
-            </label>
-            <div class="application-form__files application-form__files--view">
-              <span class="application-form__file-name">sckan_pasporta.png</span>
-              <span class="application-form__file-diskspace">1,5 МБ</span>
-              <a href="#">Удалить</a>
-            </div>
-            <div class="application-form__files application-form__files--choose">
-              <label for="application-form__file-choose"><span class="application-form__file-choose">Выбрать файл</span></label>
-              <input type="file" id="application-form__file-choose" name="application-form__file-choose">
-              <span class="application-form__file-extension">(.gif, .jpg, .png, .zip, .rar, .csv, .doc, .docx, .xls, .xlsx, .txt, .pdf, не более 2 МБ)</span>
-            </div>
-            <h2>Отправка</h2>
-            <label for="application-form__login">
-              <span class="application-form__prompt">Ваш логин</span>
-              <input type="text" name="application-form__login" id="application-form__login" placeholder="Ваш логин">
-            </label>
-            <label for="application-form__capcha">
-              <span class="application-form__prompt">Текст с картинки</span>
-              <input type="text" name="application-form__capcha" id="application-form__capcha" placeholder="Текст с картинки">
-            </label>
-            <div class="application-form__capcha-image">
-              <img src="../images/pages/capcha.png" alt="Capcha"><a href="#">Обновить картинку</a>
-            </div>
-            <input type="submit" name="application-form__send-button" value="Отправить заявку">
+              <input type="radio" name="application-form__tickets" value="Отправить мне только ОТКРЫТЫЕ заявки">
+              <input type="radio" name="application-form__tickets" value="Отправить мне ВСЕ мои заявки">
+            </section>
+
+            <input type="submit" name="application-form__send-button" value="Отправить идентификатор">
           </form>
         </section>
+
+        
+        
+        
       </article>
     </div>
   </section>
