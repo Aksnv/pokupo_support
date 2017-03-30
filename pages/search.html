@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Служба поддержки Pokupo.ru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- iOS-->
+  <!-- Windows 8--> 
+  <!-- Windows-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Windows Phone-->
+  <!-- Blackberry and etc--> 
+  <!-- No parse telephone and address--> 
+
+  <!-- SEO-->
+  <meta name="description" content="...">
+  <meta name="keywords" content="..."> 
+  <meta name="copyright" content="...">
+  <meta name="reply-to" content="...">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
+
+  <link rel="shortcut icon" href="../images/icons/favicon.ico">
+  <link rel="stylesheet" href="../styles/support.css">
+  <link rel="stylesheet" href="../styles/support_display.css">
+   
+  <!--[if lt IE 9]>
+  <script src="..."></script>
+  <![endif]-->
+
+  <!-- <script src="..."></script> -->
+</head>
+<body>
+
+  <!-- Page header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__logo">
+        <a href="https://pokupo.ru/" title="Pokupo.ru">Pokupo.ru</a>
+      </div>
+      <div class="page-header__title">
+        <h1>Служба поддержки Pokupo.ru</h1>
+      </div>
+    </div>
+    <div class="page-header__search">
+      <div class="container">
+      <form name="search-form" action="#" method="post">
+        <input type="search" name="search-field" placeholder="Поиск справки...">
+        <label class="search-button"><input type="submit" name="search-button" value="Искать"></label>
+      </form>
+        
+      </div>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <section class="page-content">
+    <div class="container">
+      <section class="page-content__breadcrumbs">
+        <a href="https://pokupo.ru/">Торговая платформа Pokupo.ru</a><span> / </span>
+        <a href="../index.html">Служба поддержки Pokupo.ru</a><span> / </span><span>Существующие заявки</span>
+      </section>
+      <a href="../index.html" class="button-back">Назад к списку</a>
+      <article class="page-content__article">
+        <h1>Добавление нового вопроса</h1>
+        <section class="article-content article-content--application">
+          <form name="application-form" method="POST" action="#" class="application-form">
+            <h2>Отправитель</h2>
+            <label for="application-form__name">
+              <span class="application-form__prompt">Настоящее имя</span>
+              <input id="application-form__name" type="text" name="application-form__name" placeholder="Настоящее имя">
+            </label>
+            <label for="application-form__email">
+              <span class="application-form__prompt">E-mail</span>
+              <input id="application-form__email" type="email" name="application-form__email" placeholder="E-mail">
+            </label>
+            <h2>Категория</h2>
+            <div class="application-form__category">
+              <label for="application-form__category">
+                <span class="application-form__prompt application-form__prompt--visible">Категория</span>
+                <input id="application-form__category" type="text" name="application-form__category" placeholder="Общие вопросы">
+              </label>
+              <ul class="application-form__category-list">
+                <li>Общие вопросы</li>
+                <li>Обращение к администрации</li>
+              </ul>
+            </div>
+            <div class="application-form__priority">
+              <label for="application-form__priority">
+                <span class="application-form__prompt application-form__prompt--visible">Приоритет</span>
+                <input id="application-form__priority" type="text" name="application-form__priority" placeholder="Низкий">
+              </label>
+              <ul class="application-form__priority-list">
+                <li>Низкий</li>
+                <li>Средний</li>
+                <li>Высокий</li>
+              </ul>
+            </div>
+            <h2>Сообщение</h2>
+            <label for="application-form__theme">
+              <span class="application-form__prompt">Тема</span>
+              <input id="application-form__theme" type="text" name="application-form__theme" placeholder="Тема">
+            </label>
+            <label for="application-form__message">
+              <span class="application-form__prompt application-form__prompt--textarea">Текст сообщения для отправки</span>
+              <textarea id="application-form__message" name="application-form__message" placeholder="Текст сообщения"></textarea>
+            </label>
+            <div class="application-form__files application-form__files--view">
+              <span class="application-form__file-name">sckan_pasporta.png</span>
+              <span class="application-form__file-diskspace">1,5 МБ</span>
+              <a href="#">Удалить</a>
+            </div>
+            <div class="application-form__files application-form__files--choose">
+              <label for="application-form__file-choose"><span class="application-form__file-choose">Выбрать файл</span></label>
+              <input type="file" id="application-form__file-choose" name="application-form__file-choose">
+              <span class="application-form__file-extension">(.gif, .jpg, .png, .zip, .rar, .csv, .doc, .docx, .xls, .xlsx, .txt, .pdf, не более 2 МБ)</span>
+            </div>
+            <h2>Отправка</h2>
+            <label for="application-form__login">
+              <span class="application-form__prompt">Ваш логин</span>
+              <input type="text" name="application-form__login" id="application-form__login" placeholder="Ваш логин">
+            </label>
+            <label for="application-form__capcha">
+              <span class="application-form__prompt">Текст с картинки</span>
+              <input type="text" name="application-form__capcha" id="application-form__capcha" placeholder="Текст с картинки">
+            </label>
+            <div class="application-form__capcha-image">
+              <img src="../images/pages/capcha.png" alt="Capcha"><a href="#">Обновить картинку</a>
+            </div>
+            <input type="submit" name="application-form__send-button" value="Отправить заявку">
+          </form>
+        </section>
+      </article>
+    </div>
+  </section>
+
+  <!-- Page footer -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__columns">
+        <div class="page-footer__columns-left">
+          <div class="page-footer__column page-footer__column--left">
+            <ul>
+              <li class="contact-icon contact-icon--copyright">Pokupo.ru&nbsp;2014</li>
+              <li class="contact-icon contact-icon--email"><a href="mailto:support@pokupo.ru" title="E-mail">support@pokupo.ru</a></li>
+              <li class="contact-icon contact-icon--skype"><a href="skype:pokupo.ru?chat" onclick="return skypeCheck()" title="Skype">pokupo.ru</a></li>
+            </ul>
+          </div>
+          <div class="page-footer__column page-footer__column--center">
+            <ul>
+              <li><a href="https://help.pokupo.ru/knowledgebase.php" title="База знаний">База знаний</a></li>
+              <li><a href="https://help.pokupo.ru/" title="Техническая поддержка">Техническая поддержка</a></li>
+              <li><a href="https://pokupo.ru/sitemap" title="Карта сайта">Карта сайта</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-footer__columns-right">
+          <div class="page-footer__column page-footer__column--sm">
+            <ul>
+              <li class="social-icon social-icon--vk"><a href="https://new.vk.com/pokupo" target="_blank" title="Вконтакте">Вконтакте</a></li>
+              <li class="social-icon social-icon--tw"><a href="https://twitter.com/pokupo_ru" target="_blank" title="Твиттер">Твиттер</a></li>
+              <li class="social-icon social-icon--blog"><a href="https://pokupo.ru/blog" target="_blank" title="Блог">Блог</a></li>
+              <li class="social-icon social-icon--hh"><a href="https://habrahabr.ru/users/pokupo/" target="_blank" title="Хабрахабр">Хабрахабр</a></li>
+              <li class="social-icon social-icon--gp"><a href="https://groups.google.com/forum/#!forum/pokupo_ru" target="_blank" title="Гугл-плюс">Гугл-плюс</a></li>
+            </ul>
+          </div>
+          <div class="page-footer__column page-footer__column--right">
+            <ul>
+              <li><a href="https://pokupo.ru/rules" title="Пользовательское соглашение">Пользовательское соглашение</a></li>
+              <li><a href="https://pokupo.ru/police" title="Правила конфиденциальности">Правила конфиденциальности</a></li>
+              <li><a href="https://pokupo.ru/refund" title="Политика возврата платежей">Политика возврата платежей</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="../scripts/jquery-3.1.1.min.js"></script>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
