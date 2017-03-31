@@ -64,8 +64,8 @@
       <a href="../index.html" class="button-back">Назад к списку</a>
       <article class="page-content__article">
         <h1>Просмотр существующих заявок</h1>
-        <section class="article-content article-content--application">
-          <form name="application-form" method="POST" action="#" class="application-form">
+        <section class="article-content article-content--application article-content--search">
+          <form name="application-form--search-id" method="POST" action="#" class="application-form application-form--search-id">
             <h2>Поиск заявки</h2>
             <label for="application-form__id">
               <span class="application-form__prompt">Идентификатор заявки</span>
@@ -75,26 +75,34 @@
               <span class="application-form__prompt">E-mail</span>
               <input id="application-form__email" type="email" name="application-form__email" placeholder="E-mail">
             </label>
-            <button class="forget-id__button">Забыли идентификатор</button>
-            
-            <section class="forget-id">
+            <div class="forget-id__button"><a>Забыли идентификатор?</a></div>
+            <input type="submit" name="application-form__send-button" value="Просмотреть заявку">
+          </form>
+          
+          <section class="forget-id">
+            <form name="application-form--forget-id" method="POST" action="#" class="application-form application-form--forget-id">
               <h2>Забыли идентификатор?</h2>
               <p>Не переживайте! Введите свой E-mail адрес и мы отправим Вам идентификатор заявки в ближайшее время:</p>
               <label for="application-form__email">
                 <span class="application-form__prompt">E-mail</span>
                 <input id="application-form__email" type="email" name="application-form__email" placeholder="E-mail">
               </label>
-              <input type="radio" name="application-form__tickets" value="Отправить мне только ОТКРЫТЫЕ заявки">
-              <input type="radio" name="application-form__tickets" value="Отправить мне ВСЕ мои заявки">
-            </section>
-
-            <input type="submit" name="application-form__send-button" value="Отправить идентификатор">
-          </form>
+              <div class="application-form__tickets">
+                <label for="application-form__tickets--open">
+                  <!-- <span class="application-form__tickets"></span> -->
+                  <input id="application-form__tickets--open" type="radio" name="application-form__tickets" checked="checked">
+                  <span class="application-form__send-tickets">Отправить мне только ОТКРЫТЫЕ заявки</span>
+                </label>
+                <label for="application-form__tickets--all">
+                  <!-- <span class="application-form__tickets"></span> -->
+                  <input id="application-form__tickets--all" type="radio" name="application-form__tickets">
+                  <span class="application-form__send-tickets">Отправить мне ВСЕ мои заявки</span>
+                </label>
+              </div>
+              <input type="submit" name="application-form__send-button" value="Отправить идентификатор">
+            </form>
+          </section>
         </section>
-
-        
-        
-        
       </article>
     </div>
   </section>

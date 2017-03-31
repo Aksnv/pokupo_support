@@ -1030,13 +1030,121 @@ input[type="file"] {
 
 /* ---------------  --------------- Search content ---------------  --------------- */
 
+.article-content--search {
+  padding-bottom: 27px;
+}
+
+.article-content--search input {
+  margin-bottom: 22px;
+}
+
+.application-form--search-id input[name="application-form__send-button"] {
+  bottom: -93px;
+}
+
 label[for="application-form__id"]::after {
   left: 226px;
 }
 
 .forget-id {
+  display: none;
+}
+
+.forget-id--open {
+  position: relative;
+  left: -51px;
+  display: block;
+  width: 978px;
+  height: 286px;
+  margin-top: 27px;
+  padding-top: 32px;
+  padding-left: 51px;
+  padding-right: 0;
+  padding-bottom: 17px;
   background-color: #ffe9bf;
 }
+
+.forget-id--open h2 {
+  font-size: 16px;
+}
+
+.forget-id--open p {
+  padding-bottom: 35px;
+}
+
+.forget-id--open input {
+  margin-bottom: 35px;
+}
+
+.application-form--forget-id h2:nth-of-type(n) {
+  padding-bottom: 11px;
+}
+
+.application-form__tickets label {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin-right: 78px;
+}
+
+.application-form__tickets label::after {
+  display: none;
+}
+
+.application-form input[type="radio"] {
+  width: auto;
+  height: auto;
+}
+
+.application-form__send-tickets {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.application-form__send-tickets::before {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.application-form input[type="radio"]:checked + .application-form__send-tickets::after {
+  position: absolute;
+  top: -3px;
+  left: 9px;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: #00883c;
+  border-radius: 50%;
+}
+
+.forget-id__button {
+  position: relative;
+  right: 24px;
+  width: 160px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.forget-id__button a {
+  text-decoration: underline;
+  color: #177a93;
+}
+
+.application-form--forget-id input[name="application-form__send-button"] {
+  left: calc(50% - 198px);
+  bottom: -102px;
+  width: 394px;
+}
+
 
 /* ---------------  --------------- Footer ---------------  --------------- */
 

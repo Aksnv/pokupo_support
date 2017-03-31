@@ -90,5 +90,19 @@ $(window).resize(function() {
   }
 });
 
+/* Показать/скрыть блок "Забыли идентификатор" */
 
+$(".forget-id__button").click(function() {
+  $(".forget-id").toggleClass("forget-id--open");
+  if ($(".application-form--search-id input[name='application-form__send-button']").css("display") == "block") {
+    $(".application-form--search-id input[name='application-form__send-button']").css("display", "none");
+  } else {
+    $(".application-form--search-id input[name='application-form__send-button']").css("display", "block");
+  }
 
+  if ($(".forget-id").hasClass("forget-id--open")) {
+    $(".article-content--search").css("paddingBottom", "2px");
+  } else {
+    $(".article-content--search").css("paddingBottom", "27px");
+  }
+});
