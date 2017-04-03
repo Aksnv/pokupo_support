@@ -210,6 +210,26 @@
     margin-bottom: 16px;
   }
 
+  /* ---------------  --------------- Search content ---------------  --------------- */
+
+  .forget-id--open {
+    left: -40px;
+    width: 750px;
+    z-index: 2;
+  }
+
+  .forget-id--open p {
+    width: 670px;
+  }
+
+  .application-form--forget-id p > span {
+    display: inline-block;
+  }
+
+  .application-form__tickets label {
+    margin-bottom: 30px;
+  }
+
   /* ---------------  --------------- Footer ---------------  --------------- */
 
   .page-footer__columns {

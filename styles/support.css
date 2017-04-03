@@ -1055,7 +1055,7 @@ label[for="application-form__id"]::after {
   left: -51px;
   display: block;
   width: 978px;
-  height: 286px;
+  min-height: 286px;
   margin-top: 27px;
   padding-top: 32px;
   padding-left: 51px;
@@ -1085,6 +1085,7 @@ label[for="application-form__id"]::after {
   vertical-align: top;
   width: auto;
   margin-right: 78px;
+  cursor: pointer;
 }
 
 .application-form__tickets label::after {
@@ -1094,6 +1095,7 @@ label[for="application-form__id"]::after {
 .application-form input[type="radio"] {
   width: auto;
   height: auto;
+  margin-bottom: 0;
 }
 
 .application-form__send-tickets {
