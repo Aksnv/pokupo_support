@@ -234,6 +234,12 @@
     margin-bottom: 30px;
   }
 
+  /* ---------------  --------------- Ticket content ---------------  --------------- */
+
+  .article-content__support-message {
+    width: 605px;
+  }
+
   /* ---------------  --------------- Footer ---------------  --------------- */
 
   .page-footer__columns {
@@ -629,6 +635,108 @@
 
   .application-form input[name="application-form__send-button"] {
     font-size: 18px;
+  }
+
+  /* ---------------  --------------- Ticket content ---------------  --------------- */
+  
+  .page-content__article--ticket {
+    padding-bottom: 0;
+  }
+
+  .page-content__article--ticket h1 {
+    width: 300px;
+  }
+
+  .page-content__article--ticket h1::after {
+    top: 87px;
+  }
+
+  .page-content__article--ticket h1 > span {
+    display: block;
+  }
+
+  .article-details--ticket {
+    margin-bottom: 29px;
+  }
+
+  .article-details--ticket h2 {
+    display: none;
+  }
+
+  .article-details__block {
+    padding-top: 18px;
+    padding-left: 3px;
+  }
+
+  .article-details__block--ticket td {
+    display: block;
+    line-height: 17px;
+  }
+
+  .article-details__block--ticket td:nth-child(odd) {
+    opacity: 0.5;
+  }
+
+  .article-details__block--ticket td:nth-child(even) {
+    padding-bottom: 6px;
+  }
+
+  .article-content--ticket {
+    padding-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .article-content__user-message {
+    padding-left: 3px;
+    padding-right: 25px;
+  }
+
+  .article-content__user-message::before,
+  .article-content__user-message::after {
+    width: 40px;
+    height: 100%;
+    background-color: #efece7;
+    border: none;
+  }
+
+  .article-content__user-message::before {
+    top: 0;
+    left: -40px;
+  }
+
+  .article-content__user-message::after {
+    top: 0;
+    right: -40px;
+    transform: none;
+  }
+
+  .article-content__support-message {
+    width: 300px;
+    padding-left: 23px;
+    padding-right: 25px;
+  }
+
+  .article-content__answer-rating {
+    padding-left: 3px;
+  }
+
+  .article-content__answer-rating p {
+    padding-right: 4px;
+    padding-bottom: 25px;
+  }
+
+  .page-content__article--write-message h1 {
+    padding-bottom: 15px;
+  }
+
+  .page-content__article--write-message .article-content--application {
+    margin-bottom: 129px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+  }
+
+  .article-content--application .application-form input[name="application-form__send-button"] {
+    bottom: -99px;
   }
 
   /* ---------------  --------------- Footer ---------------  --------------- */
