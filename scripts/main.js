@@ -105,4 +105,15 @@ $(".forget-id__button").click(function() {
   } else {
     $(".article-content--search").css("paddingBottom", "27px");
   }
+
+  if (($(".forget-id").hasClass("forget-id--open")) && ($(".container").css("width") == "300px")) {
+    $(".application-form--search-id").css("display", "none");
+    $(".article-content--search").css("paddingTop", 0);
+    $(".article-content--search").css("marginBottom", "125px");
+    $(".application-form__send-tickets").css("paddingTop", "2px");
+    $(".application-form__tickets label").css("marginBottom", "10px");
+    $(".application-form__tickets label[for='application-form__tickets--all']").css("paddingBottom", "5px");
+    $("label[for='application-form__tickets--all'] span").css("paddingTop", "10px");
+    $(".application-form input[name='application-form__send-button']").css("bottom", "-95px");
+  }
 });
