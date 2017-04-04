@@ -88,6 +88,16 @@ $(window).resize(function() {
   } else {
     $(".application-form__file-extension").html("(.gif, .jpg, .png, .zip, .rar, .csv, .doc, .docx, .xls, .xlsx, .txt, .pdf, не более 2 МБ)");
   }
+  if (($(".container").css("width") == "300px") && ($(".forget-id").hasClass("forget-id--open"))) {
+    $(".forget-id").removeClass("forget-id--open");
+    $(".application-form input[name='application-form__send-button']").css("display", "block");
+    $(".article-content--search").css("paddingBottom", "40px");
+  }
+  if ($(".container").css("width") > "300px") {
+    $(".application-form--search-id").css("display", "block");
+    $(".article-content--application").css("paddingTop", "43px");
+    $(".article-content--search").css("paddingBottom", "27px");
+  }
 });
 
 /* Показать/скрыть блок "Забыли идентификатор" */
