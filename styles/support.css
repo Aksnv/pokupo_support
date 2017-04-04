@@ -1149,6 +1149,10 @@ label[for="application-form__id"]::after {
 
 /* ---------------  --------------- Ticket content ---------------  --------------- */
 
+.page-content__article--ticket {
+  padding-bottom: 24px;
+}
+
 .page-content__article--ticket h1 {
   position: relative;
   padding-bottom: 56px;
@@ -1165,15 +1169,24 @@ label[for="application-form__id"]::after {
   background-color: #efece7;
 }
 
+.page-content__article--ticket h2 {
+  font-size: 16px;
+}
+
+.article-details--ticket {
+  margin-bottom: 36px;
+}
+
 .article-details--ticket h2 {
   font-size: 16px;
 }
 
-.article-details__block--ticket td {
+.article-details__block--ticket td:last-child {
   width: 210px;
 }
 
 .article-content--ticket {
+  padding: 0;
   background-color: #fff;
 }
 
@@ -1184,6 +1197,11 @@ label[for="application-form__id"]::after {
 
 .article-content__user-message {
   position: relative;
+  padding-left: 50px;
+  padding-top: 12px;
+  padding-right: 110px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
   background-color: #efece7;
 }
 
@@ -1211,8 +1229,85 @@ label[for="application-form__id"]::after {
   transform: rotate(-45deg);
 }
 
+.article-content__user-message h2,
+.article-content__support-message h2 {
+  padding-bottom: 1px;
+}
+
+.article-content__user-message time,
+.article-content__support-message time {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.article-content__user-message p,
+.article-content__support-message p {
+  padding-bottom: 10px;
+}
+
+.article-content__user-files {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 25px;
+  padding-bottom: 9px;
+}
+
+.article-content__user-files::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 19px;
+  height: 21px;
+  background-image: url("../images/sprite.png");
+  background-position: -869px -924px;
+}
+
 .article-content__support-message {
+  float: right;
+  width: 928px;
+  padding-left: 50px;
+  padding-top: 12px;
+  padding-right: 110px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
   background-color: #eaf5e2;
+}
+
+.article-content__support-message h2 {
+  padding-top: 5px;
+}
+
+.article-content__answer-rating {
+  clear: both;
+  padding-top: 5px;
+  padding-left: 98px;
+}
+
+.article-content__answer-rating p,
+.article-content__answer-rating ul {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article-content__answer-rating ul {
+  padding-top: 2px;
+}
+
+.article-content__answer-rating p {
+  font-style: italic;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.article-content__answer-rating .rating-icon:last-child::after {
+  display: none;
+}
+
+.page-content__article--write-message .application-form__files--choose {
+  margin-bottom: 12px;
 }
 
 /* ---------------  --------------- Footer ---------------  --------------- */
