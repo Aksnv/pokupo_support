@@ -139,32 +139,46 @@
 
   /* ---------------  --------------- Add content ---------------  --------------- */
 
-  .application-form input,
+  .application-form input/* ,
   .application-form__category, 
-  .application-form__priority {
+  .application-form__priority */,
+  .application-form__category select,
+  .application-form__priority select {
     width: 307px;
   }
 
-  .application-form__category {
+  /* .application-form__category {
     margin-right: 34px;
-  }
+  } */
 
   .application-form input[name="application-form__email"] {
     margin-right: 0;
   }
 
-  .application-form__priority {
+  .application-form__priority select {
     margin-right: 0;
   }
 
+  /* .application-form__priority {
+    margin-right: 0;
+  }
+  
   .application-form__category::after, 
   .application-form__priority::after {
     right: 14px;
   }
-
+  
   .application-form__category-list, 
   .application-form__priority-list {
     width: 307px;
+  } */
+
+  .application-form__priority::before {
+    right: 6px;
+  }
+
+  .application-form__priority::after {
+    right: 16px;
   }
 
   .application-form input[name="application-form__theme"] {
@@ -397,8 +411,10 @@
 
   .application-form input,
   .application-form textarea,
-  .application-form__category, 
-  .application-form__priority,
+  /* .application-form__category, 
+  .application-form__priority, */,
+  .application-form__category select,
+  .application-form__priority select,
   .application-form__files,
   .application-form input[name="application-form__theme"],
   .application-form input[name="application-form__login"],
@@ -410,13 +426,13 @@
     margin-bottom: 40px;
   }
 
-  .application-form__category,
+  /* .application-form__category,
   .application-form__priority input {
     margin-bottom: 0;
-  }
+  } */
 
-  .application-form input[name="application-form__email"],
-  .application-form__priority {
+  .application-form input[name="application-form__email"]/* ,
+  .application-form__priority */ {
     margin-bottom: 23px;
   }
 

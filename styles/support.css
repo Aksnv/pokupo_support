@@ -566,11 +566,11 @@ ul {
   outline: none;
 }
 
-.application-form input[name="application-form__category"]:focus,
+/* .application-form input[name="application-form__category"]:focus,
 .application-form input[name="application-form__priority"]:focus {
   border: 3px solid #fff;
   outline: none;
-}
+} */
 
 .application-form input::-webkit-input-placeholder {
   font-family: "Open Sans", sans-serif;
@@ -641,10 +641,10 @@ input[name="application-form__theme"] {
   color: #ed1c24;
 }
 
-.application-form label[for="application-form__category"]::after,
+/* .application-form label[for="application-form__category"]::after,
 .application-form label[for="application-form__priority"]::after {
   display: none;
-}
+} */
 
 label[for="application-form__name"]::after {
   left: 159px;
@@ -701,46 +701,17 @@ label[for="application-form__capcha"]::after {
   display: block;
 }
 
-.application-form__category,
+/* .application-form__category,
 .application-form__priority {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  /* width: 420px;
-  height: 60px;
-  font-size: 18px;
-  font-weight: 400;
-  margin-right: 34px;
-  margin-bottom: 43px;
-  padding-top: 20px;
-  padding-left: 18px;
-  background-color: #fff;
-  color: #a1a1a1;
-  cursor: pointer; */
 }
 
 #application-form__category,
 #application-form__priority {
   cursor: pointer;
 }
-
-/* .application-form__category::before,
-.application-form__priority::before {
-  position: absolute;
-  top: -25px;
-  left: 17px;
-  font-size: 13px;
-  font-weight: 400;
-  color: #a1a1a1;
-}
-
-.application-form__category::before {
-  content: "Категория";
-}
-
-.application-form__priority::before {
-  content: "Приоритет";
-} */
 
 .application-form__category::after,
 .application-form__priority::after {
@@ -812,6 +783,63 @@ label[for="application-form__capcha"]::after {
 
 .application-form__category p {
   z-index: 4;
+} */
+
+.application-form__category,
+.application-form__priority {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.application-form__category::before,
+.application-form__priority::before {
+    position: absolute;
+    top: 26px;
+    right: 39px;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.application-form__category::after,
+.application-form__priority::after {
+    position: absolute;
+    top: 29px;
+    right: 49px;
+    content: "";
+    display: block;
+    border: 6px solid transparent;
+    border-top: 6px solid #999;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.application-form__category select,
+.application-form__priority select {
+  width: 420px;
+  height: 60px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 34px;
+  margin-bottom: 43px;
+  padding-left: 12px;
+  border: 3px solid #fff;
+}
+
+.application-form__category select:focus,
+.application-form__priority select:focus {
+  border: 3px solid #ff5a00;
+  outline: none;
+}
+
+.application-form__prompt--select {
+  top: -25px;
 }
 
 .application-form__files {

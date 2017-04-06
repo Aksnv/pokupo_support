@@ -76,7 +76,7 @@
               <input id="application-form__email" type="email" name="application-form__email" placeholder="E-mail">
             </label>
             <h2>Категория</h2>
-            <div class="application-form__category">
+            <!-- <div class="application-form__category">
               <label for="application-form__category">
                 <span class="application-form__prompt application-form__prompt--visible">Категория</span>
                 <input id="application-form__category" type="text" name="application-form__category" placeholder="Общие вопросы">
@@ -96,7 +96,24 @@
                 <li>Средний</li>
                 <li>Высокий</li>
               </ul>
+            </div> -->
+
+            <div class="application-form__category">
+              <span class="application-form__prompt application-form__prompt--select application-form__prompt--visible">Категория</span>
+              <select>
+                <option>Общие вопросы</option>
+                <option>Обращение к администрации</option>
+              </select>
             </div>
+            <div class="application-form__priority">
+              <span class="application-form__prompt application-form__prompt--select application-form__prompt--visible">Приоритет</span>
+              <select>
+                <option>Низкий</option>
+                <option>Средний</option>
+                <option>Высокий</option>
+              </select>
+            </div>
+
             <h2>Сообщение</h2>
             <label for="application-form__theme">
               <span class="application-form__prompt">Тема</span>
