@@ -412,7 +412,7 @@
   .application-form input,
   .application-form textarea,
   /* .application-form__category, 
-  .application-form__priority, */,
+  .application-form__priority, */
   .application-form__category select,
   .application-form__priority select,
   .application-form__files,
@@ -422,7 +422,8 @@
     width: 300px;
   }
 
-  .application-form input {
+  .application-form input,
+  .application-form__category select {
     margin-bottom: 40px;
   }
 
@@ -432,7 +433,8 @@
   } */
 
   .application-form input[name="application-form__email"]/* ,
-  .application-form__priority */ {
+  .application-form__priority */,
+  .application-form__priority select {
     margin-bottom: 23px;
   }
 
@@ -649,9 +651,9 @@
     bottom: -100px;
   }
 
-  .application-form input[name="application-form__send-button"] {
+  /* .application-form input[name="application-form__send-button"] {
     font-size: 18px;
-  }
+  } */
 
   /* ---------------  --------------- Ticket content ---------------  --------------- */
   
@@ -752,7 +754,7 @@
   }
 
   .article-content--application .application-form input[name="application-form__send-button"] {
-    bottom: -99px;
+    bottom: -90px;
   }
 
   /* ---------------  --------------- Footer ---------------  --------------- */
